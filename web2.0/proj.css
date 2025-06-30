@@ -1,0 +1,118 @@
+* {
+    margin: 5px;
+    padding: 1px;
+    box-sizing: 20px;
+}
+
+body {
+    background: linear-gradient(to left, rgb(101, 210, 85), rgb(28, 108, 28), rgb(6, 20, 4));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: transparent;
+    box-shadow:0 2px 20px rgba(83, 135, 63, 0.538);
+}
+.logo{
+    color: rgb(12, 158, 12);
+    font-weight: bolder;
+    font-size: 40px;
+    display: flex;
+    text-shadow: rgb(64, 99, 64);
+    position: relative;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: rgb(247, 240, 255);
+    position: relative;
+    padding: 5px;
+    transition: color 0.3s;
+}
+.nav-menu li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    width: 0%;
+    background: rgb(0, 0, 0);
+    transition: 0.3s ease;
+}
+.nav-menu li a::hover::before
+.nav-menu li a::active::before{
+    width: 100%;
+}
+.nav-menu li a::hover::before{
+    color: darkgreen;
+}
+.front h1{
+    margin: 20px;
+    font-size: 40px;
+    font-family: "consolas", sans-serif;
+    font-weight: bold;
+    color: antiquewhite;
+}
+.front h1{
+    height: 50px;
+    width: 520px;
+    background-color: transparent;
+
+    position: relative;
+
+    top: 300px;
+    left: 10px;
+
+}
+.front h2{
+    margin: 10px;
+    font-size: 30px;
+    font-family: "consolas", sans-serif;
+    font-weight: bold;
+    color: antiquewhite;
+}
+.front h2{
+    height: 50px;
+    width: 520px;
+    background-color: transparent;
+
+    position: relative;
+
+    top: 340px;
+    left: 17px;
+
+}
+.button{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.button{
+    position: relative;
+    top: 400px;
+    left: 120px;
+    color: green;
+}
+.button:hover{
+    transform: scaleY(1.25);
+}
+.image{
+    width: 10%;
+    margin-top: -355px;
+    margin-left: 70px;
+}
+.image img:hover{
+    transform: scale(1.05);
+}
+
+img{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    margin: auto;
+    border-radius: 50%;
+    border: 10px solid darkgreen;
+}
